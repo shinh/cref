@@ -1,11 +1,19 @@
 #!/usr/bin/env ruby
 
-if !ARGV[0]
-  STDERR.puts "Usage: cref <regexp>"
-  exit 1
+if ENV['HTTP_HOST']
+  require 'cgi'
+  q = CGI.new
+  regexp = q['q'].to_s.strip
+  puts "Content-Type: text/plain\r\n\r\n"
+else
+  regexp = ARGV[0]
+  if !regexp
+    STDERR.puts "Usage: cref <regexp>"
+    exit 1
+  end
 end
 
-reg = /(^|\t)#{ARGV[0]}(\t|$)/
+reg = /(^|\t)#{regexp}(\t|$)/
 
 Dir.glob(File.dirname($0) + '/*.tsv').each do |tsv|
   lines = File.readlines(tsv)
