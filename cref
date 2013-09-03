@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+if !ARGV[0]
+  STDERR.puts "Usage: cref <regexp>"
+  exit 1
+end
+
+reg = /(^|\t)#{ARGV[0]}(\t|$)/
+
+Dir.glob(File.dirname($0) + '/*.tsv').each do |tsv|
+  lines = File.readlines(tsv)
+  title, *header = *lines.shift.chomp.split("\t")
+
+  first_tsv = true
+  lines.each do |line|
+    line.chomp!
+    if reg =~ line
+      if first_tsv
+        puts "=== #{title} ==="
+        first_tsv = false
+      end
+
+      puts
+      name, *values = *line.split("\t")
+      puts "* #{name}"
+      header.zip(values).each do |h, v|
+        puts "#{h}: #{v}"
+      end
+    end
+  end
+end
