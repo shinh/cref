@@ -24,7 +24,7 @@ Dir.glob(File.dirname($0) + '/*.tsv').each do |tsv|
     line.chomp!
     if reg =~ line
       if first_tsv
-        puts "=== #{title} ==="
+        puts "\n=== #{title} ==="
         first_tsv = false
       end
 
