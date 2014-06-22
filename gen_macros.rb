@@ -3,8 +3,8 @@
 require 'cgi'
 
 TARGETS = %w(
-libc-2.17-x64
-libc-2.17-i686
+libc-2.18-x64
+libc-2.18-i686
 libc-2.17-x32
 libc-2.9-nacl-x64
 libc-2.9-nacl-i686

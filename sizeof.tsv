@@ -1,9 +1,9 @@
-sizeof(XXX)	libc-2.17-x64	libc-2.17-i686	libc-2.17-x32	libc-2.9-nacl-x64	libc-2.9-nacl-i686
+sizeof(XXX)	libc-2.18-x64	libc-2.18-i686	libc-2.17-x32	libc-2.9-nacl-x64	libc-2.9-nacl-i686
 abort_msg_s	4 (struct)	4 (struct)	4 (struct)	???	???
 accepted_reply	48 (struct)	24 (struct)	24 (struct)	24 (struct)	24 (struct)
 accept_stat	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
-action	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
 ACTION	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
+action	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
 addrinfo	48 (struct)	32 (struct)	32 (struct)	32 (struct)	32 (struct)
 ad_private	1160 (struct)	1128 (struct)	1128 (struct)	1128 (struct)	1128 (struct)
 ai_response_header	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
@@ -45,7 +45,7 @@ bracket_elem_t	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anony
 bracket_elem_type	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 bsdcred	16 (struct)	16 (struct)	16 (struct)	16 (struct)	16 (struct)
 builtin_map	32 (struct)	16 (struct)	16 (struct)	16 (struct)	16 (struct)
-byte	1 (unsigned char)	1 (unsigned char)	1 (unsigned char)	1 (unsigned char)	???
+byte	1 (unsigned char)	???	1 (unsigned char)	1 (unsigned char)	???
 cached_data	24 (struct)	16 (struct)	16 (struct)	???	???
 cache_entry	40 (struct)	28 (struct)	28 (struct)	28 (struct)	28 (struct)
 cache_node	72 (struct)	44 (struct)	44 (struct)	44 (struct)	44 (struct)
@@ -77,12 +77,13 @@ codestrs_t_4	145 (struct)	145 (struct)	145 (struct)	???	???
 codestrs_t_5	38 (struct)	38 (struct)	38 (struct)	???	???
 codestrs_t_7	86 (struct)	86 (struct)	86 (struct)	???	???
 codestrs_t_8	205 (struct)	205 (struct)	205 (struct)	???	???
+coll_seq	??? (<anonymous>)	??? (<anonymous>)	???	???	???
 coll_sort_rule	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
 const_node	8 (node_t*)	4 (node_t*)	4 (node_t*)	4 (node_t*)	4 (node_t*)
 converted_domain	24 (struct)	12 (struct)	12 (struct)	12 (struct)	12 (struct)
 cookie_io_functions_t	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 cpuid_registers	16 (struct)	???	16 (struct)	???	???
-cpu_features	52 (struct)	???	52 (struct)	???	???
+cpu_features	68 (struct)	???	52 (struct)	???	???
 cpu_features_kind	4 (struct)	???	4 (struct)	???	???
 cpu_set_t	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 cryptkeyarg	16 (struct)	12 (struct)	12 (struct)	12 (struct)	12 (struct)
@@ -102,11 +103,11 @@ desparams	48 (struct)	44 (struct)	44 (struct)	44 (struct)	44 (struct)
 dests_alloc	12288 (struct)	11264 (struct)	11264 (struct)	11264 (struct)	11264 (struct)
 des_block	8 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
 dev_t	8 (long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)
-DIR	40 (__dirstream)	24 (__dirstream)	32 (__dirstream)	32 (__dirstream)	32 (__dirstream)
+DIR	48 (__dirstream)	28 (__dirstream)	32 (__dirstream)	32 (__dirstream)	32 (__dirstream)
 dirent	280 (struct)	268 (struct)	280 (struct)	280 (struct)	280 (struct)
 dirent64	280 (struct)	276 (struct)	280 (struct)	280 (struct)	280 (struct)
 dir_data	24 (struct)	12 (struct)	12 (struct)	12 (struct)	12 (struct)
-DItype	???	8 (long long int)	???	???	8 (long long int)
+DItype	???	8 (long long int)	???	???	8 (???)
 div_t	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 Dl_info	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 dl_open_hook	24 (struct)	12 (struct)	12 (struct)	12 (struct)	12 (struct)
@@ -117,6 +118,8 @@ double	8 (basic)	8 (basic)	8 (basic)	8 (basic)	8 (basic)
 do_dlopen_args	32 (struct)	16 (struct)	16 (struct)	12 (struct)	12 (struct)
 do_dlsym_args	32 (struct)	16 (struct)	16 (struct)	16 (struct)	16 (struct)
 drand48_data	24 (struct)	24 (struct)	24 (struct)	24 (struct)	24 (struct)
+dtor_func	8 (<func>*)	4 (<func>*)	???	???	???
+dtor_list	32 (struct)	16 (struct)	???	???	???
 dtv	16 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
 dtv_slotinfo	16 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
 dtv_slotinfo_list	16 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
@@ -147,7 +150,7 @@ Elf64_Half	2 (short unsigned int)	???	???	2 (short unsigned int)	???
 Elf64_Off	8 (long unsigned int)	???	???	8 (long long unsigned int)	???
 Elf64_Phdr	??? (<anonymous>)	???	???	??? (<anonymous>)	???
 Elf64_Section	2 (short unsigned int)	2 (short unsigned int)	2 (short unsigned int)	2 (short unsigned int)	2 (short unsigned int)
-Elf64_Sxword	8 (long int)	???	???	8 (long long int)	???
+Elf64_Sxword	8 (long int)	???	???	8 (???)	???
 Elf64_Sym	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 Elf64_Versym	2 (short unsigned int)	???	???	2 (short unsigned int)	???
 Elf64_Word	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)
@@ -156,8 +159,8 @@ Elf_Symndx	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4
 encoded_futex_operation	???	???	???	4 (struct)	4 (struct)
 endent_function	8 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)
 end_function	8 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)
-entry	16 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
 ENTRY	16 (entry)	8 (entry)	8 (entry)	8 (entry)	8 (entry)
+entry	16 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
 enum_t	4 (int)	4 (int)	4 (int)	4 (int)	4 (int)
 epoll_data	8 (struct)	???	8 (struct)	8 (struct)	8 (struct)
 epoll_data_t	8 (epoll_data)	???	8 (epoll_data)	8 (epoll_data)	8 (epoll_data)
@@ -275,10 +278,10 @@ ino_t	8 (long unsigned int)	4 (long unsigned int)	8 (long long unsigned int)	8 (
 int	4 (basic)	4 (basic)	4 (basic)	4 (basic)	4 (basic)
 int16_t	2 (short int)	2 (short int)	2 (short int)	2 (short int)	2 (short int)
 int32_t	4 (int)	4 (int)	4 (int)	4 (int)	4 (int)
-int64_t	8 (long int)	8 (long long int)	8 (long long int)	8 (long long int)	8 (long long int)
+int64_t	8 (long int)	8 (long long int)	8 (long long int)	8 (???)	8 (???)
 int8_t	1 (signed char)	1 (signed char)	1 (signed char)	1 (signed char)	1 (signed char)
 intel_02_cache_info	8 (struct)	8 (struct)	8 (struct)	20 (struct)	20 (struct)
-intmax_t	8 (long int)	8 (long long int)	8 (long long int)	8 (long long int)	8 (long long int)
+intmax_t	8 (long int)	8 (long long int)	8 (long long int)	8 (???)	8 (???)
 intptr_t	8 (long int)	4 (int)	4 (int)	4 (int)	4 (int)
 int_fast32_t	8 (long int)	4 (int)	4 (int)	4 (int)	4 (int)
 in_addr	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
@@ -341,7 +344,7 @@ ldiv_t	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	?
 leap	16 (struct)	8 (struct)	16 (struct)	16 (struct)	16 (struct)
 libc_ifunc_impl	24 (struct)	12 (struct)	12 (struct)	???	???
 libname_list	24 (struct)	12 (struct)	12 (struct)	12 (struct)	12 (struct)
-link_map	1128 (struct)	600 (struct)	600 (struct)	648 (struct)	600 (struct)
+link_map	1136 (struct)	604 (struct)	600 (struct)	648 (struct)	600 (struct)
 link_map_machine	24 (struct)	12 (struct)	12 (struct)	24 (struct)	12 (struct)
 link_map_public	40 (struct)	20 (struct)	20 (struct)	24 (struct)	20 (struct)
 link_map_reldeps	8 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
@@ -360,10 +363,10 @@ locarhead	56 (struct)	56 (struct)	56 (struct)	56 (struct)	56 (struct)
 locked_FILE	600 (struct)	368 (struct)	376 (struct)	376 (struct)	376 (struct)
 locked_map_ptr	16 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
 locrecent	108 (struct)	108 (struct)	108 (struct)	108 (struct)	108 (struct)
-loff_t	???	8 (long long int)	???	8 (long long int)	8 (long long int)
+loff_t	???	8 (long long int)	???	8 (???)	8 (???)
 long double	16 (basic)	12 (basic)	16 (basic)	8 (basic)	8 (basic)
 long int	8 (basic)	4 (basic)	4 (basic)	4 (basic)	4 (basic)
-long long int	8 (basic)	8 (basic)	8 (basic)	8 (basic)	8 (basic)
+long long int	8 (basic)	8 (basic)	8 (basic)	???	???
 long long unsigned int	8 (basic)	8 (basic)	8 (basic)	8 (basic)	8 (basic)
 long unsigned int	8 (basic)	4 (basic)	4 (basic)	4 (basic)	4 (basic)
 long_int	8 (long int)	8 (long long int)	8 (long long int)	???	???
@@ -404,25 +407,25 @@ mstate	8 (malloc_state*)	4 (malloc_state*)	4 (malloc_state*)	4 (malloc_state*)	4
 mutex_t	4 (int)	4 (int)	4 (int)	4 (int)	4 (int)
 nacl_abi_blkcnt_t	???	???	???	4 (long int)	4 (long int)
 nacl_abi_blksize_t	???	???	???	4 (long int)	4 (long int)
-nacl_abi_dev_t	???	???	???	8 (long long int)	8 (long long int)
+nacl_abi_dev_t	???	???	???	8 (???)	8 (???)
 nacl_abi_dirent	???	???	???	280 (struct)	280 (struct)
 nacl_abi_gid_t	???	???	???	4 (unsigned int)	4 (unsigned int)
-nacl_abi_ino_t	???	???	???	8 (long long int)	8 (long long int)
+nacl_abi_ino_t	???	???	???	8 (???)	8 (???)
 nacl_abi_mode_t	???	???	???	4 (unsigned int)	4 (unsigned int)
 nacl_abi_nlink_t	???	???	???	4 (unsigned int)	4 (unsigned int)
-nacl_abi_off_t	???	???	???	8 (long long int)	8 (long long int)
+nacl_abi_off_t	???	???	???	8 (???)	8 (???)
 nacl_abi_stat	???	???	???	104 (struct)	104 (struct)
-nacl_abi_time_t	???	???	???	8 (long long int)	8 (long long int)
+nacl_abi_time_t	???	???	???	8 (???)	8 (???)
 nacl_abi_uid_t	???	???	???	4 (unsigned int)	4 (unsigned int)
-nacl_abi__off_t	???	???	???	8 (long long int)	8 (long long int)
+nacl_abi__off_t	???	???	???	8 (???)	8 (???)
 nacl_abi___blkcnt_t	???	???	???	4 (long int)	4 (long int)
 nacl_abi___blksize_t	???	???	???	4 (long int)	4 (long int)
-nacl_abi___dev_t	???	???	???	8 (long long int)	8 (long long int)
+nacl_abi___dev_t	???	???	???	8 (???)	8 (???)
 nacl_abi___gid_t	???	???	???	4 (unsigned int)	4 (unsigned int)
-nacl_abi___ino_t	???	???	???	8 (long long int)	8 (long long int)
+nacl_abi___ino_t	???	???	???	8 (???)	8 (???)
 nacl_abi___mode_t	???	???	???	4 (unsigned int)	4 (unsigned int)
 nacl_abi___nlink_t	???	???	???	4 (unsigned int)	4 (unsigned int)
-nacl_abi___time_t	???	???	???	8 (long long int)	8 (long long int)
+nacl_abi___time_t	???	???	???	8 (???)	8 (???)
 nacl_abi___uid_t	???	???	???	4 (unsigned int)	4 (unsigned int)
 namehashent	12 (struct)	12 (struct)	12 (struct)	12 (struct)	12 (struct)
 name_database	16 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
@@ -456,8 +459,8 @@ ntptimeval	72 (struct)	36 (struct)	48 (struct)	24 (struct)	24 (struct)
 object	???	24 (struct)	???	???	24 (struct)
 obstack	88 (struct)	44 (struct)	44 (struct)	44 (struct)	44 (struct)
 obstack_FILE	232 (struct)	156 (struct)	168 (struct)	168 (struct)	168 (struct)
-off64_t	8 (long int)	8 (long long int)	8 (long long int)	8 (long long int)	8 (long long int)
-off_t	8 (long int)	4 (long int)	8 (long long int)	8 (long long int)	8 (long long int)
+off64_t	8 (long int)	8 (long long int)	8 (long long int)	8 (???)	8 (???)
+off_t	8 (long int)	4 (long int)	8 (long long int)	8 (???)	8 (???)
 old_kernel_dirent	???	268 (struct)	???	???	???
 old_kernel_dirent64	???	276 (struct)	???	???	???
 opaque_auth	24 (struct)	12 (struct)	12 (struct)	12 (struct)	12 (struct)
@@ -517,7 +520,7 @@ ptrs_to_free	272 (struct)	136 (struct)	136 (struct)	136 (struct)	136 (struct)
 public_function	8 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)
 pw_response_header	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 qelem	24 (struct)	12 (struct)	12 (struct)	12 (struct)	12 (struct)
-quad_t	8 (long int)	8 (long long int)	8 (long long int)	8 (long long int)	8 (long long int)
+quad_t	8 (long int)	8 (long long int)	8 (long long int)	8 (???)	8 (???)
 random_data	48 (struct)	28 (struct)	28 (struct)	28 (struct)	28 (struct)
 random_poly_info	40 (struct)	40 (struct)	40 (struct)	40 (struct)	40 (struct)
 range	24 (struct)	16 (struct)	16 (struct)	16 (struct)	16 (struct)
@@ -585,8 +588,8 @@ rpc_thread_variables	264 (struct)	196 (struct)	196 (struct)	196 (struct)	196 (st
 rpc_timeval	8 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
 rtattr	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
 rtgenmsg	1 (struct)	1 (struct)	1 (struct)	1 (struct)	1 (struct)
-rtld_global	3960 (struct)	2100 (struct)	2256 (struct)	1696 (struct)	1424 (struct)
-rtld_global_ro	296 (struct)	464 (struct)	192 (struct)	192 (struct)	440 (struct)
+rtld_global	3968 (struct)	2104 (struct)	2256 (struct)	1696 (struct)	1424 (struct)
+rtld_global_ro	304 (struct)	472 (struct)	192 (struct)	192 (struct)	440 (struct)
 rusage	144 (struct)	72 (struct)	144 (struct)	88 (struct)	88 (struct)
 r_debug	40 (struct)	20 (struct)	20 (struct)	32 (struct)	20 (struct)
 r_dir_status	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
@@ -696,7 +699,7 @@ timespec	16 (struct)	8 (struct)	16 (struct)	16 (struct)	16 (struct)
 timeval	16 (struct)	8 (struct)	16 (struct)	16 (struct)	16 (struct)
 timex	208 (struct)	128 (struct)	208 (struct)	144 (struct)	144 (struct)
 timezone	8 (struct)	8 (struct)	8 (struct)	8 (struct)	8 (struct)
-time_t	8 (long int)	4 (long int)	8 (long long int)	8 (long long int)	8 (long long int)
+time_t	8 (long int)	4 (long int)	8 (long long int)	8 (???)	8 (???)
 tls_index	16 (dl_tls_index)	8 (dl_tls_index)	16 (dl_tls_index)	16 (dl_tls_index)	8 (dl_tls_index)
 tm	56 (struct)	44 (struct)	44 (struct)	44 (struct)	44 (struct)
 tms	32 (struct)	16 (struct)	32 (struct)	16 (struct)	16 (struct)
@@ -783,8 +786,8 @@ xid_command	40 (struct)	20 (struct)	20 (struct)	20 (struct)	20 (struct)
 xprt_stat	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
 xp_ops	48 (struct)	24 (struct)	24 (struct)	24 (struct)	24 (struct)
 yyalloc	8 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
-YYSTYPE	8 (struct)	4 (struct)	4 (struct)	???	???
 yystype	???	???	???	??? (<anonymous>)	??? (<anonymous>)
+YYSTYPE	8 (struct)	4 (struct)	4 (struct)	???	???
 yytype_int16	2 (short int)	2 (short int)	2 (short int)	???	???
 yytype_int8	1 (signed char)	1 (signed char)	1 (signed char)	???	???
 yytype_uint8	1 (unsigned char)	1 (unsigned char)	1 (unsigned char)	???	???
@@ -864,9 +867,9 @@ _xmmreg	16 (struct)	16 (struct)	16 (struct)	16 (struct)	16 (struct)
 __128bits	??? (<anonymous>)	???	??? (<anonymous>)	???	???
 __action_fn_t	8 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)
 __bb	48 (struct)	24 (struct)	24 (struct)	24 (struct)	24 (struct)
-__blkcnt64_t	8 (long int)	8 (long long int)	8 (long long int)	8 (long long int)	8 (long long int)
+__blkcnt64_t	8 (long int)	8 (long long int)	8 (long long int)	8 (???)	8 (???)
 __blkcnt_t	8 (long int)	4 (long int)	8 (long long int)	???	???
-__blksize_t	8 (long int)	4 (long int)	8 (long long int)	8 (long long int)	8 (long long int)
+__blksize_t	8 (long int)	4 (long int)	8 (long long int)	8 (???)	8 (???)
 __caddr_t	8 (char*)	4 (char*)	4 (char*)	4 (char*)	4 (char*)
 __clockid_t	4 (int)	4 (int)	4 (int)	4 (int)	4 (int)
 __clock_t	8 (long int)	4 (long int)	8 (long long int)	4 (long int)	4 (long int)
@@ -877,7 +880,7 @@ __CONST_SOCKADDR_ARG	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	???	?
 __cpu_mask	8 (long unsigned int)	4 (long unsigned int)	4 (long unsigned int)	4 (long unsigned int)	4 (long unsigned int)
 __daddr_t	4 (int)	4 (int)	4 (int)	4 (int)	4 (int)
 __dev_t	8 (long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)
-__dirstream	40 (struct)	24 (struct)	32 (struct)	32 (struct)	32 (struct)
+__dirstream	48 (struct)	28 (struct)	32 (struct)	32 (struct)	32 (struct)
 __dispatch_fn_t	8 (<func>*)	4 (<func>*)	4 (<func>*)	???	???
 __exit_status	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
 __fd_mask	8 (long int)	4 (long int)	4 (long int)	4 (long int)	4 (long int)
@@ -912,6 +915,7 @@ __gwchar_t	4 (int)	4 (long int)	4 (long int)	???	???
 __id_t	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)
 __ino64_t	8 (long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)
 __ino_t	8 (long unsigned int)	4 (long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)
+__int128 unsigned	16 (basic)	???	???	???	???
 __int32_t	4 (int)	4 (int)	4 (int)	4 (int)	4 (int)
 __intptr_t	8 (long int)	4 (int)	4 (int)	4 (int)	4 (int)
 __io_close_fn	??? (<func>)	??? (<func>)	??? (<func>)	??? (<func>)	??? (<func>)
@@ -920,7 +924,7 @@ __io_seek_fn	??? (<func>)	??? (<func>)	??? (<func>)	??? (<func>)	??? (<func>)
 __io_write_fn	??? (<func>)	??? (<func>)	??? (<func>)	??? (<func>)	??? (<func>)
 __ipc_pid_t	???	2 (short unsigned int)	???	???	2 (short unsigned int)
 __itimer_which	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
-__jmp_buf	8 (long int[])	4 (int[])	4 (long long int[])	4 (long long int[])	4 (int[])
+__jmp_buf	8 (long int[])	4 (int[])	4 (long long int[])	4 (???[])	4 (int[])
 __jmp_buf_tag	200 (struct)	156 (struct)	200 (struct)	200 (struct)	156 (struct)
 __kernel_long_t	8 (long int)	4 (long int)	8 (long long int)	???	???
 __kernel_off_t	8 (long int)	4 (long int)	8 (long long int)	???	???
@@ -934,7 +938,7 @@ __libc_rwlock_t	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anon
 __locale_data	64 (struct)	36 (struct)	40 (struct)	???	???
 __locale_struct	232 (struct)	116 (struct)	116 (struct)	116 (struct)	116 (struct)
 __locale_t	8 (__locale_struct*)	4 (__locale_struct*)	4 (__locale_struct*)	4 (__locale_struct*)	4 (__locale_struct*)
-__loff_t	???	8 (long long int)	???	8 (long long int)	8 (long long int)
+__loff_t	???	8 (long long int)	???	8 (???)	8 (???)
 __m128i	8 (long long int[])	???	4 (long long int[])	???	???
 __mbstate_t	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 __mode_t	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)
@@ -944,8 +948,8 @@ __nftw_func_t	8 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)	4 (<func>*)
 __nlink_t	8 (long unsigned int)	4 (unsigned int)	8 (long long unsigned int)	4 (unsigned int)	4 (unsigned int)
 __nl_catd	8 (catalog_info*)	4 (catalog_info*)	4 (catalog_info*)	4 (catalog_info*)	4 (catalog_info*)
 __ns_sect	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
-__off64_t	8 (long int)	8 (long long int)	8 (long long int)	8 (long long int)	8 (long long int)
-__off_t	8 (long int)	4 (long int)	8 (long long int)	8 (long long int)	8 (long long int)
+__off64_t	8 (long int)	8 (long long int)	8 (long long int)	8 (???)	8 (???)
+__off_t	8 (long int)	4 (long int)	8 (long long int)	8 (???)	8 (???)
 __old_dirent64	???	272 (struct)	???	???	???
 __old_ipc_perm	???	16 (struct)	???	???	16 (struct)
 __old_msqid_ds	???	56 (struct)	???	???	72 (struct)
@@ -963,7 +967,7 @@ __pthread_mutex_s	40 (struct)	24 (struct)	32 (struct)	32 (struct)	24 (struct)
 __pthread_slist_t	???	4 (__pthread_internal_slist)	???	???	4 (__pthread_internal_slist)
 __pthread_unwind_buf_t	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 __ptrace_request	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
-__quad_t	8 (long int)	8 (long long int)	8 (long long int)	8 (long long int)	8 (long long int)
+__quad_t	8 (long int)	8 (long long int)	8 (long long int)	8 (???)	8 (???)
 __res_state	568 (struct)	512 (struct)	512 (struct)	512 (struct)	512 (struct)
 __rlim64_t	8 (long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	???	???
 __rlimit_resource	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
@@ -986,7 +990,7 @@ __suseconds_t	8 (long int)	4 (long int)	8 (long long int)	4 (long int)	4 (long i
 __syscall_slong_t	8 (long int)	4 (long int)	8 (long long int)	???	???
 __syscall_ulong_t	8 (long unsigned int)	4 (long unsigned int)	8 (long long unsigned int)	???	???
 __sysctl_args	80 (struct)	40 (struct)	???	40 (struct)	40 (struct)
-__time_t	8 (long int)	4 (long int)	8 (long long int)	8 (long long int)	8 (long long int)
+__time_t	8 (long int)	4 (long int)	8 (long long int)	8 (???)	8 (???)
 __u16	2 (short unsigned int)	2 (short unsigned int)	2 (short unsigned int)	2 (short unsigned int)	2 (short unsigned int)
 __u32	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)	4 (unsigned int)
 __u8	1 (unsigned char)	1 (unsigned char)	1 (unsigned char)	1 (unsigned char)	1 (unsigned char)
@@ -1001,12 +1005,12 @@ __u_long	8 (long unsigned int)	4 (long unsigned int)	4 (long unsigned int)	4 (lo
 __u_quad_t	8 (long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)	8 (long long unsigned int)
 __u_short	2 (short unsigned int)	2 (short unsigned int)	2 (short unsigned int)	2 (short unsigned int)	2 (short unsigned int)
 __v16qi	8 (char[])	???	4 (char[])	???	???
-__v2di	8 (long long int[])	???	4 (long long int[])	???	???
-__v4si	8 (int[])	???	4 (int[])	???	???
+__v2di	???	???	4 (long long int[])	???	???
+__v4si	???	???	4 (int[])	???	???
 __va_list_tag	24 (struct)	???	16 (struct)	16 (struct)	16 (struct)
 __vlimit_resource	4 (struct)	4 (struct)	4 (struct)	4 (struct)	4 (struct)
 __WAIT_STATUS	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)	??? (<anonymous>)
 ____libc_atexit_hook_function_t	??? (<func>)	??? (<func>)	??? (<func>)	???	???
 ____libc_subfreeres_hook_function_t	??? (<func>)	??? (<func>)	??? (<func>)	???	???
 ____libc_thread_subfreeres_hook_function_t	??? (<func>)	??? (<func>)	??? (<func>)	???	???
-???	???	???	???	4 (basic)	4 (basic)
+???	???	???	???	8 (basic)	8 (basic)

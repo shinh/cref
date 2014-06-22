@@ -5,8 +5,8 @@ require 'cgi'
 require 'json'
 
 FILENAMES = %w(
-libc-2.17-x64.json
-libc-2.17-i686.json
+libc-2.18-x64.json
+libc-2.18-i686.json
 libc-2.17-x32.json
 libc-2.9-nacl-x64.json
 libc-2.9-nacl-i686.json
@@ -31,7 +31,7 @@ FILENAMES.each do |filename|
         if (name == '_IO_FILE' || name == '_IO_FILE_plus' ||
             name == 'helper_file' || name == 'locked_FILE' ||
             name == 'group' || name == 'area' || name == 'ct_data' ||
-            name == 'known_object')
+            name == 'known_object' || name == '???')
           types[name][1] = [types[name][1], info[1]].max
         elsif info != types[name]
           raise "#{name} #{info} vs #{types[name]}"
